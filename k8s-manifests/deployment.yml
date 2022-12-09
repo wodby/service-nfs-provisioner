@@ -2,7 +2,7 @@ apiVersion: v1
 kind: Namespace
 metadata:
   name: nfs-ganesha
----    
+---
 apiVersion: v1
 kind: ServiceAccount
 metadata:
