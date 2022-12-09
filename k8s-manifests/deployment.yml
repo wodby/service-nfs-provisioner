@@ -8,7 +8,6 @@ kind: ServiceAccount
 metadata:
   name: nfs-provisioner
   namespace: nfs-ganesha
-  
 ---
 kind: Service
 apiVersion: v1
