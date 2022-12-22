@@ -122,10 +122,3 @@ spec:
                 fieldRef:
                   fieldPath: metadata.namespace
           imagePullPolicy: "IfNotPresent"
-          volumeMounts:
-            - name: export-volume
-              mountPath: /export
-      volumes:
-        - name: export-volume
-          hostPath:
-            path: /srv
