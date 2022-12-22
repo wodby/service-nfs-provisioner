@@ -30,7 +30,6 @@ metadata:
 subjects:
   - kind: ServiceAccount
     name: nfs-provisioner
-    namespace: nfs-ganesha
 roleRef:
   kind: ClusterRole
   name: nfs-provisioner-runner
@@ -52,7 +51,6 @@ metadata:
 subjects:
   - kind: ServiceAccount
     name: nfs-provisioner
-    namespace: nfs-ganesha
 roleRef:
   kind: Role
   name: leader-locking-nfs-provisioner
