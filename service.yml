@@ -1,7 +1,7 @@
 name: nfs-ganesha
 title: Ganesha NFS server
-type: infrastructure
+type: storage
 hostname: nfs-ganesha
 scalable: false
 containers:
-  - name: nfs-provisioner
+- name: nfs-provisioner
