@@ -33,7 +33,7 @@ subjects:
   namespace: '{{.Namespace}}'
 roleRef:
   kind: ClusterRole
-  name: '{{.Name}}'
+  name: '{{.Namespace}}-{{.Name}}'
   apiGroup: rbac.authorization.k8s.io
 ---
 kind: Role
