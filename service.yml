@@ -5,3 +5,8 @@ hostname: nfs-ganesha
 scalable: false
 containers:
 - name: nfs-provisioner
+
+volumes:
+- name: export
+  title: Export
+  path: /export
