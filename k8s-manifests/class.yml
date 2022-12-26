@@ -1,7 +1,7 @@
 kind: StorageClass
 apiVersion: storage.k8s.io/v1
 metadata:
-  name: {{.Namespace}}-{{.Name}}
-provisioner: {{.Namespace}}-{{.Name}}
+  name: '{{.Namespace}}-{{.Name}}'
+provisioner: '{{.Namespace}}-{{.Name}}'
 mountOptions:
 - vers=4.1
