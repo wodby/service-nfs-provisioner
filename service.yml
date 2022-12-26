@@ -1,6 +1,7 @@
 name: nfs-ganesha
 title: Ganesha NFS server
 type: storage
+icon: ganesha
 hostname: nfs-ganesha
 scalable: false
 options:
