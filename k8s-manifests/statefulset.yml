@@ -52,7 +52,7 @@ spec:
   selector:
     matchLabels:
       name: '{{.Name}}'
-  serviceName: "'{{.Name}}'"
+  serviceName: '{{.Name}}'
   replicas: 1
   template:
     metadata:
