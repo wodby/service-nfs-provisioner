@@ -3,8 +3,13 @@ title: Ganesha NFS server
 type: storage
 hostname: nfs-ganesha
 scalable: false
+options:
+- version: 'v3.0.0'
+  default: true
+
 containers:
 - name: nfs-provisioner
+  image: k8s.gcr.io/sig-storage/nfs-provisioner
 
 volumes:
 - name: export
