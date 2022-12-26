@@ -1,7 +1,7 @@
 kind: ClusterRole
 apiVersion: rbac.authorization.k8s.io/v1
 metadata:
-  name: {{.namespace}}-{{.name}}
+  name: {{.Namespace}}-{{.Name}}
 rules:
 - apiGroups: [""]
   resources: ["persistentvolumes"]
@@ -26,21 +26,21 @@ rules:
 kind: ClusterRoleBinding
 apiVersion: rbac.authorization.k8s.io/v1
 metadata:
-  name: {{.namespace}}-{{.name}}
+  name: {{.Namespace}}-{{.Name}}
 subjects:
 - kind: ServiceAccount
-  name: {{.name}}
-  namespace: {{.namespace}}
+  name: {{.Name}}
+  namespace: {{.Namespace}}
 roleRef:
   kind: ClusterRole
-  name: {{.name}}
+  name: {{.Name}}
   apiGroup: rbac.authorization.k8s.io
 ---
 kind: Role
 apiVersion: rbac.authorization.k8s.io/v1
 metadata:
-  name: {{.name}}
-  namespace: {{.namespace}}
+  name: {{.Name}}
+  namespace: {{.Namespace}}
 rules:
 - apiGroups: [""]
   resources: ["endpoints"]
@@ -49,13 +49,13 @@ rules:
 kind: RoleBinding
 apiVersion: rbac.authorization.k8s.io/v1
 metadata:
-  name: {{.name}}
-  namespace: {{.namespace}}
+  name: {{.Name}}
+  namespace: {{.Namespace}}
 subjects:
 - kind: ServiceAccount
-  name: {{.name}}
-  namespace: {{.namespace}}
+  name: {{.Name}}
+  namespace: {{.Namespace}}
 roleRef:
   kind: Role
-  name: {{.name}}
+  name: {{.Name}}
   apiGroup: rbac.authorization.k8s.io
