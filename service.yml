@@ -13,43 +13,42 @@ containers:
   image: k8s.gcr.io/sig-storage/nfs-provisioner
   ports:
   - name: nfs
-    port: 2049
+    number: 2049
     type: tcp
     main: true
   - name: nfs-udp
-    port: 2049
+    number: 2049
     type: udp
   - name: nlockmgr
-    port: 32803
-    type: tcp    
+    number: 32803
+    type: tcp
   - name: nlockmgr-udp
-    port: 32803
+    number: 32803
     type: udp
   - name: mountd
-    port: 20048
-    type: tcp    
+    number: 20048
+    type: tcp
   - name: mountd-udp
-    port: 20048
+    number: 20048
     type: udp
   - name: rquotad
-    port: 875
-    type: tcp    
+    number: 875
+    type: tcp
   - name: rquotad-udp
-    port: 875
+    number: 875
     type: udp
   - name: rpcbind
-    port: 111
-    type: tcp    
+    number: 111
+    type: tcp
   - name: rpcbind-udp
-    port: 111
+    number: 111
     type: udp
   - name: statd
-    port: 662
-    type: tcp    
+    number: 662
+    type: tcp
   - name: statd-udp
-    port: 662
+    number: 662
     type: udp
-
 
 volumes:
 - name: export
