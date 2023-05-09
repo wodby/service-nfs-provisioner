@@ -5,12 +5,12 @@ icon: ganesha
 hostname: nfs-ganesha
 scalable: false
 options:
-- version: 'v3.0.0'
+- version: 'v4.0.8'
   default: true
 
 containers:
 - name: nfs-provisioner
-  image: k8s.gcr.io/sig-storage/nfs-provisioner
+  image: registry.k8s.io/sig-storage/nfs-provisioner
   ports:
   - name: nfs
     number: 2049
