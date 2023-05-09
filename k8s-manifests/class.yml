@@ -4,5 +4,4 @@ metadata:
   name: '{{.Namespace}}-{{.Name}}'
 provisioner: '{{.Namespace}}-{{.Name}}'
 mountOptions:
-- tcp
-- nfsvers=4.1
+- vers=4.1
