@@ -50,6 +50,20 @@ containers:
     number: 662
     type: udp
 
+imports:
+- name: files
+  title: Files import
+  image: wodby/import
+  args:
+  - make
+  - files-import
+  - 'source="{{wodby_import_url}}"'
+  extensions:
+  - tar
+  - tar.gz
+  - tgz
+  - zip
+
 volumes:
 - name: export
   title: Export
