@@ -53,11 +53,7 @@ containers:
 imports:
 - name: files
   title: Files import
-  image: wodby/import
-  args:
-  - make
-  - files-import
-  - 'source="{{wodby_import_url}}"'
+  destination: /export
   extensions:
   - tar
   - tar.gz
@@ -68,3 +64,13 @@ volumes:
 - name: export
   title: Export
   path: /export
+
+backups:
+- name: files
+  title: Files backup
+  upload:
+    dir: /export
+    gzip: false
+  integrations:
+  - backup-destination
+
