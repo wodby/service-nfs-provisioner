@@ -63,7 +63,20 @@ imports:
 volumes:
 - name: export
   title: Export
-  path: /export
+  values:    
+  - name: persistence.enabled
+    value: true
+  - name: persistence.size
+    value: '{{volumes.data.size}}Gi'
+  configurations:
+  - name: nfs-server-provisioner
+    resources: resources
+
+helm:
+  name: nfs-ganesha-server-and-external-provisioner
+  source: https://kubernetes-sigs.github.io/nfs-ganesha-server-and-external-provisioner
+  chart: nfs-ganesha-server-and-external-provisioner/nfs-server-provisioner
+  version: 1.8.0
 
 backups:
 - name: files
