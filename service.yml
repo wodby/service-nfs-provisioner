@@ -78,8 +78,8 @@ helm:
   configurations:
   - name: nfs-provisioner
     annotations: podAnnotations
-    label: podLabels
-    envVars: envVars
+    labels: podLabels
+    env: envVars
     resources: resources
 
 backups:
