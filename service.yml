@@ -63,12 +63,6 @@ imports:
 volumes:
 - name: export
   title: Export
-  configurations:
-  - name: nfs-provisioner
-    resources: resources
-    annotations: podAnnotations
-    env: envVars
-    resources: resources
 
 helm:
   name: wodby
