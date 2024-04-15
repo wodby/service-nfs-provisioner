@@ -63,19 +63,17 @@ imports:
 volumes:
 - name: export
   title: Export
-  values:    
-  - name: persistence.enabled
-    value: true
-  - name: persistence.size
-    value: '{{volumes.data.size}}Gi'
   configurations:
-  - name: nfs-server-provisioner
+  - name: nfs-provisioner
+    resources: resources
+    annotations: podAnnotations
+    env: envVars
     resources: resources
 
 helm:
-  name: nfs-ganesha-server-and-external-provisioner
-  source: https://kubernetes-sigs.github.io/nfs-ganesha-server-and-external-provisioner
-  chart: nfs-ganesha-server-and-external-provisioner/nfs-server-provisioner
+  name: wodby
+  source: oci://registry-1.docker.io/wodby/nfs-provisioner
+  chart: oci://registry-1.docker.io/wodby/nfs-provisioner
   version: 1.8.0
 
 backups:
