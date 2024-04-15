@@ -1,8 +1,8 @@
-name: nfs-ganesha
-title: Ganesha NFS server
+name: nfs-provisioner
+title: Ganesha NFS provisioner
 type: storage
 icon: ganesha
-hostname: nfs-ganesha
+hostname: nfs
 scalable: false
 options:
 - version: 'v4.0.8'
@@ -75,6 +75,12 @@ helm:
   source: oci://registry-1.docker.io/wodby/nfs-provisioner
   chart: oci://registry-1.docker.io/wodby/nfs-provisioner
   version: 1.8.0
+  configurations:
+  - name: nfs-provisioner
+    annotations: podAnnotations
+    label: podLabels
+    envVars: envVars
+    resources: resources
 
 backups:
 - name: files
