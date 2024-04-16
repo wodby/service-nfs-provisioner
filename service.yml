@@ -68,7 +68,7 @@ helm:
   name: wodby
   source: oci://registry-1.docker.io/wodby/nfs-provisioner
   chart: oci://registry-1.docker.io/wodby/nfs-provisioner
-  version: 1.8.0
+  version: 0.1.0
   configurations:
   - name: nfs-provisioner
     annotations: podAnnotations
