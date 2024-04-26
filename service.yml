@@ -52,6 +52,7 @@ containers:
 
 imports:
 - name: files
+  volume: export
   title: Files import
   destination: /export
   extensions:
