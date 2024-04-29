@@ -5,7 +5,8 @@ icon: ganesha
 hostname: nfs
 scalable: false
 options:
-- version: 'v4.0.8'
+- version: '4'
+  tag: v4.0.8
   default: true
 
 containers:
