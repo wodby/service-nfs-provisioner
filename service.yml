@@ -67,6 +67,9 @@ volumes:
   title: Export
   helm:
     labels: persistence.labels
+    values:
+    - name: persistence.size
+      value: '{{volumes.export.size}}Gi'
 
 helm:
   name: wodby
