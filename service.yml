@@ -65,6 +65,8 @@ imports:
 volumes:
 - name: export
   title: Export
+  helm:
+    labels: persistence.labels
 
 helm:
   name: wodby
