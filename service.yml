@@ -53,7 +53,7 @@ containers:
 
 imports:
 - name: files
-  volume: export
+  volume: data
   title: Files import
   destination: /export
   extensions:
@@ -63,13 +63,13 @@ imports:
   - zip
 
 volumes:
-- name: export
-  title: Export
+- name: data
+  title: Data
   helm:
     labels: persistence.labels
     values:
     - name: persistence.size
-      value: '{{volumes.export.size}}Gi'
+      value: '{{volumes.data.size}}Gi'
 
 helm:
   name: wodby
