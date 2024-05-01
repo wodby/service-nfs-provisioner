@@ -10,7 +10,7 @@ options:
   default: true
 
 containers:
-- name: nfs-provisioner
+- name: nfs
   image: registry.k8s.io/sig-storage/nfs-provisioner
   ports:
   - name: nfs
@@ -77,7 +77,7 @@ helm:
   chart: oci://registry-1.docker.io/wodby/nfs-provisioner
   version: 0.1.2
   configurations:
-  - name: nfs-provisioner
+  - name: nfs
     annotations: podAnnotations
     labels: podLabels
     env: envVars
