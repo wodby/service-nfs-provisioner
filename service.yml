@@ -66,10 +66,15 @@ volumes:
 - name: data
   title: Data
   helm:
-    labels: persistence.labels
     values:
+    - name: persistence.enabled
+      value: true
     - name: persistence.size
       value: '{{volumes.data.size}}Gi'
+    # mandatory to use existing claim since this volume has import function
+    # we will mount different claim after import and doing it through sts's volumeclaimtemplates is not supported
+    - name: persistence.existingClaim
+      value: '{{volumes.data.claim}}'
 
 helm:
   name: wodby
