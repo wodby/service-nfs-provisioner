@@ -55,7 +55,6 @@ imports:
 - name: files
   volume: data
   title: Files import
-  destination: /export
   extensions:
   - tar
   - tar.gz
