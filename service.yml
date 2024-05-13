@@ -55,6 +55,7 @@ imports:
 - name: files
   volume: data
   title: Files import
+  destination: '/export/pvc-{{volumes.data.uid}}'
   extensions:
   - tar
   - tar.gz
