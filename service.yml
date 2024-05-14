@@ -13,7 +13,7 @@ containers:
 - name: nfs
   image: registry.k8s.io/sig-storage/nfs-provisioner
 
-routes:
+endpoints:
 - name: nfs
   ports:
   - name: nfs
