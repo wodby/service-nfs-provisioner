@@ -14,7 +14,7 @@ containers:
   image: registry.k8s.io/sig-storage/nfs-provisioner
 
 routes:
-- name: main
+- name: nfs
   ports:
   - name: nfs
     number: 2049
