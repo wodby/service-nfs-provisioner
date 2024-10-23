@@ -97,6 +97,3 @@ backups:
   upload:
     dir: /export
     gzip: false
-  integrations:
-  - backup-destination
-
