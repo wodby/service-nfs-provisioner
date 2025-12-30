@@ -18,41 +18,41 @@ endpoints:
   ports:
   - name: nfs
     number: 2049
-    type: tcp
+    protocol: tcp
     main: true
   - name: nfs-udp
     number: 2049
-    type: udp
+    protocol: udp
   - name: nlockmgr
     number: 32803
-    type: tcp
+    protocol: tcp
   - name: nlockmgr-udp
     number: 32803
-    type: udp
+    protocol: udp
   - name: mountd
     number: 20048
-    type: tcp
+    protocol: tcp
   - name: mountd-udp
     number: 20048
-    type: udp
+    protocol: udp
   - name: rquotad
     number: 875
-    type: tcp
+    protocol: tcp
   - name: rquotad-udp
     number: 875
-    type: udp
+    protocol: udp
   - name: rpcbind
     number: 111
-    type: tcp
+    protocol: tcp
   - name: rpcbind-udp
     number: 111
-    type: udp
+    protocol: udp
   - name: statd
     number: 662
-    type: tcp
+    protocol: tcp
   - name: statd-udp
     number: 662
-    type: udp
+    protocol: udp
 
 imports:
 - name: files
