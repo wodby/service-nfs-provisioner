@@ -90,6 +90,8 @@ helm:
     labels: podLabels
     env: envVars
     resources: resources
+    volumes: extraVolumes
+    mounts: extraVolumeMounts
 
 backups:
 - name: files
