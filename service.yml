@@ -2,7 +2,6 @@ name: nfs-provisioner
 title: Ganesha NFS provisioner
 type: storage
 icon: ganesha
-hostname: nfs
 scalable: false
 options:
 - version: '4'
