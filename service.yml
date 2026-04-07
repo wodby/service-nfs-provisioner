@@ -4,15 +4,13 @@ type: storage
 icon: ganesha
 scalable: false
 options:
-- version: '6'
+- version: '4'
   tag: v6.5
   default: true
-- version: '4'
-  tag: v4.0.8
 
 containers:
 - name: nfs
-  image: registry.k8s.io/sig-storage/nfs-provisioner
+  image: devxygmbh/nfs-server-provisioner
 
 endpoints:
 - name: nfs
