@@ -5,7 +5,7 @@ icon: ganesha
 scalable: false
 options:
 - version: '4'
-  tag: v6.5
+  tag: '6.5'
   default: true
 
 containers:
