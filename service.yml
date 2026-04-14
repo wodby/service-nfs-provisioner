@@ -4,7 +4,10 @@ type: storage
 icon: ganesha
 scalable: false
 options:
+# Version 4.0 stopped working, so we had to hotfix.
 - version: '4'
+  tag: '6.5'
+- version: '6.5'
   tag: '6.5'
   default: true
 
