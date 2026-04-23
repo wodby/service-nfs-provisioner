@@ -88,19 +88,19 @@ backups:
   upload:
     dir: /export
     gzip: false
+
 workloads:
 - id: main
   kind: statefulset
   primary: true
-  containers:
-  - name: nfs
-    image: devxygmbh/nfs-server-provisioner
-
-    helm:
-      resources: resources
-      env: envVars
-      mounts: extraVolumeMounts
   helm:
     labels: podLabels
     annotations: podAnnotations
     volumes: extraVolumes
+  containers:
+  - name: nfs
+    image: devxygmbh/nfs-server-provisioner
+    helm:
+      resources: resources
+      env: envVars
+      mounts: extraVolumeMounts
