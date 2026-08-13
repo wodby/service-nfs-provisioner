@@ -9,6 +9,8 @@ options:
   tag: '6.5'
 - version: '6.5'
   tag: '6.5'
+- version: '14.1'
+  tag: '14.1'
   default: true
 
 endpoints:

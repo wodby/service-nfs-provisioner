@@ -22,7 +22,7 @@ configuration for Ganesha NFS provisioner.
 | --- | --- |
 | Service name | `nfs-provisioner` |
 | Type | Storage service |
-| Versions | `6.5` by default; also available: `4` |
+| Versions | `14.1` by default; also available: `6.5`, `4` |
 | Workloads | `main` (StatefulSet), primary; fixed replica count |
 | Containers | `nfs` using `devxygmbh/nfs-server-provisioner` |
 | Endpoints | `nfs`: TCP 2049 (main), UDP 2049, TCP 32803, UDP 32803, TCP 20048, UDP 20048, TCP 875, UDP 875, TCP 111, UDP 111, TCP 662, UDP 662 |
