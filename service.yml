@@ -88,7 +88,7 @@ helm:
   name: wodby
   source: oci://registry-1.docker.io/wodby/nfs-provisioner
   chart: oci://registry-1.docker.io/wodby/nfs-provisioner
-  version: 0.4.0
+  version: 0.4.1
 backups:
 - name: files
   title: Files backup
