@@ -110,6 +110,10 @@ workloads:
   containers:
   - name: nfs
     image: devxygmbh/nfs-server-provisioner
+    resources:
+      request:
+        cpu: 10
+        memory: 112
     helm:
       resources: resources
       env: envVars
