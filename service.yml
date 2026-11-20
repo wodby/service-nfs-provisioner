@@ -7,10 +7,13 @@ options:
 # Version 4.0 stopped working, so we had to hotfix.
 - version: '4'
   tag: '6.5'
+  digest: sha256:2e332bd1c445c4be382c1b4957fe2497b0fd495020268b9020ffebdac006bbeb
 - version: '6.5'
   tag: '6.5'
+  digest: sha256:2e332bd1c445c4be382c1b4957fe2497b0fd495020268b9020ffebdac006bbeb
 - version: '14.1'
   tag: '14.1'
+  digest: sha256:c640235753f2448dd8df934390629363351313cdb56e19ae7aa9941e60c0e916
   default: true
 
 endpoints:
